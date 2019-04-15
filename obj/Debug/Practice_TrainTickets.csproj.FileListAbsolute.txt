@@ -1,0 +1,15 @@
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\obj\Debug\Practice_TrainTickets.csprojAssemblyReference.cache
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\obj\Debug\Practice_TrainTickets.csproj.CoreCompileInputs.cache
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\bin\Debug\Practice_TrainTickets.exe.config
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\bin\Debug\Practice_TrainTickets.exe
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\bin\Debug\Practice_TrainTickets.pdb
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\bin\Debug\EntityFramework.dll
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\bin\Debug\EntityFramework.xml
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\obj\Debug\Practice_TrainTickets.csproj.CopyComplete
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\obj\Debug\Practice_TrainTickets.exe
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\obj\Debug\Practice_TrainTickets.pdb
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\obj\Debug\Practice_TrainTickets.Migrations.InitialMigration.resources
+C:\Users\ИргалиевЕ.CORP\source\repos\Practice_TrainTickets\obj\Debug\Practice_TrainTickets.csproj.GenerateResource.cache
