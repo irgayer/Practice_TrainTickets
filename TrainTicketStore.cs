@@ -21,27 +21,13 @@ namespace Practice_TrainTickets
             {
                 result = context.Tickets.ToList();
             }
-            foreach(var c in result)
-            {
-                Console.WriteLine(c.Id);
-            }
             return result;
-        }
-
-        private void DeleteTicket(Ticket index)
-        {
-            using(var context = new AppContext())
-            {
-                context.Tickets.Remove(index);
-                context.SaveChanges();
-            }
         }
 
         public void Run()
         {
-            tickets = GetTickets();
             cart = new List<Ticket>();
-
+            tickets = GetTickets();
             Console.WriteLine($"Добро пожаловать в магазин Ж/Д билетов \"{STORE_NAME}\"");
             while (true)
             {
@@ -87,8 +73,18 @@ namespace Practice_TrainTickets
                                         {
                                             if (toBuyTicketIndex > 0 && toBuyTicketIndex <= tickets.Count)
                                             {
-                                                cart.Add(tickets[toBuyTicketIndex - 1]);
-                                                DeleteTicket(tickets[toBuyTicketIndex - 1]);
+                                                Console.WriteLine("Введите полное имя:");
+                                                Ticket newTicket = tickets[toBuyTicketIndex - 1];
+                                                newTicket.HolderName = Console.ReadLine();
+                                                cart.Add(newTicket);
+                                                Guid id = newTicket.Id;
+                                                tickets.Remove(tickets.Where(t => t.Id == id).FirstOrDefault());
+                                                using(var context = new AppContext())
+                                                {
+                                                    var ticket = context.Tickets.Where(t => t.Id == id).FirstOrDefault();
+                                                    context.Tickets.Remove(ticket);
+                                                    context.SaveChanges();
+                                                }
                                             }
                                         } 
                                     }
@@ -99,10 +95,11 @@ namespace Practice_TrainTickets
                                         foreach(var t in cart)
                                         {
                                             t.Print();
+                                            Console.WriteLine();
                                             sum += t.Price;
                                         }
                                         Console.WriteLine($"К оплате: {sum}");
-                                        
+                                        cart.Clear();
                                     }
                                 }
                                 else

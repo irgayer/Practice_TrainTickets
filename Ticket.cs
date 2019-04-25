@@ -32,6 +32,10 @@ namespace Practice_TrainTickets
             Console.WriteLine($"Цена          : {Price}");
             Console.WriteLine($"Дата отбытия  : {DepartureDate}");
             Console.WriteLine($"Дата прибытия : {ArrivalDate}");
+            if(!string.IsNullOrWhiteSpace(HolderName))
+            {
+                Console.WriteLine($"На имя        : {HolderName}");
+            }
         }
     }
 }
